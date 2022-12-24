@@ -30,7 +30,7 @@ const projects = [
 
 export default function ProjectDetail() {
   const { id } = useParams();
-  const project = projects.find((p) => p.id == id);
+  const project = projects.find((p) => p.id.toString() === id);
   const navigate = useNavigate();
   return (
     <div className="project-detail">
