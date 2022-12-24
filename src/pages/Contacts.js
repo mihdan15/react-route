@@ -6,7 +6,8 @@ export default function Contacts() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Contacts {params.username}</h1>
+      <div style={{ height: "150px" }}></div>
+      <h1 className="titlePage">Contacts {params.username}</h1>
     </div>
   );
 }

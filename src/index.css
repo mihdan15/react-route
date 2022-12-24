@@ -1,15 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f7f7;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Start Header */
+.header {
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 0px;
+  box-shadow: 0 4px 8px 0 rgba(146, 144, 144, 0.2);
+  position: fixed;
+  width: 100%;
+}
+
+.header-title {
+  color: #0a0906;
+  font-size: 32px;
+  background-color: #ffee5e;
+  text-align: center;
+  padding: 1px;
+  border-radius: 15px;
+  max-width: 70%;
+  margin: 15px auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.header-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0a0906;
+}
+.header-link.active {
+  font-weight: bold;
+}
+
+.header-link:hover {
+  font-weight: bold;
+}
+
+/* End Header */
+
+.titlePage {
+  color: #0a0906;
+  font-size: 32px;
+  background-color: #ffee5e;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 30%;
+  margin: 15px auto;
 }
 
 .landing-page {
@@ -22,15 +74,64 @@ code {
 .landing-page-header {
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .landing-page-body {
-  width: 80%;
+  width: 60%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.landing-page-body p {
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .landing-page-button {
   padding: 10px 20px;
+}
+
+/* homeproject */
+.project {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.project h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.project p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+
+.project a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: #0a0906;
+  background-color: #ffee5e;
+  box-shadow: 0 4px 8px 0 rgba(141, 141, 141, 0.09);
 }
